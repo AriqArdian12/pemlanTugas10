@@ -11,10 +11,18 @@ public class Player {
         this.tim = tim;
     }
 
-    public int getTinggi() { return tinggi; }
-    public int getBerat() { return berat; }
-    public String getTim() { return tim; }
-    public int getNomor() { return nomor; }
+    public int getTinggi() { 
+        return tinggi; 
+    }
+    public int getBerat() { 
+        return berat; 
+    }
+    public String getTim() { 
+        return tim; 
+    }
+    public int getNomor() { 
+        return nomor; 
+    }
 
     @Override
     public String toString() {
