@@ -11,24 +11,24 @@ public class Main {
         manager.addTeam(timA);
         manager.addTeam(timB);
 
-        System.out.println("=== SOAL 1: SORTING DAN ANALISIS DATA TIM ===\n");
+        System.out.println(" SOAL 1: SORTING DAN ANALISIS DATA TIM \n");
 
-        // a. Sorting tinggi
+        
         System.out.println("a. SORTING BERDASARKAN TINGGI BADAN:");
         manager.sortPlayersByHeight(true);   // Ascending
         manager.sortPlayersByHeight(false);  // Descending
 
-        // b. Sorting berat
+        
         System.out.println("\nb. SORTING BERDASARKAN BERAT BADAN:");
-        manager.sortPlayersByWeight(true);   // Ascending
-        manager.sortPlayersByWeight(false);  // Descending
+        manager.sortPlayersByWeight(true);   
+        manager.sortPlayersByWeight(false);  
 
-        // c. Min/Max
+       
         System.out.println("\nc. NILAI MAKSIMUM DAN MINIMUM:");
         printTeamStats(timA);
         printTeamStats(timB);
 
-        // d. Copy Tim B ke Tim C
+       
         System.out.println("\nd. COPY TIM B KE TIM C:");
         Team timC = manager.copyTeam(timB, "C");
         for (Player p : timC.getPlayers()) {
